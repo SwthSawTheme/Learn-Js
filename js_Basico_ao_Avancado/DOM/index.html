@@ -8,9 +8,9 @@
 </head>
 <body>
     <img src="user.png" width="100">
-    <h1 id="person-name" class="title">John Pavarick</h1>
-    <h2>Programador Javascript</h2>
-    <p> Sou programador porcascript, na qual o mercado encontra-se saturado
+    <h1 id="person-name" class="title">Seu nome</h1>
+    <h2 class="Prog">Programador Javascript</h2>
+    <p class="text"> Sou programador porcascript, na qual o mercado encontra-se saturado
     <br>estou querendo me destacar sem nenhum diferencial! <br>
      Acesse meu <a href="https://github.com/SwthSawTheme"> Github</a>
     </p>
@@ -32,7 +32,7 @@
             // for (const i of test){
             //     console.log("El",i)
             // }
-            
+
         // Forma moderna
             // document.querySelectiorAll("*")
             // console.log("*",document.querySelectorAll("*"))
@@ -40,9 +40,23 @@
             // console.log("tag",document.querySelectorAll("p"))
             // console.log("class",document.querySelector(".text"))
             // console.log("attr", document.querySelector("a[href]"))
-            for (const i of document.querySelectorAll("*")){
-                console.log("EL", i)
-            }
+            // for (const i of document.querySelectorAll("*")){
+            //     console.log("EL", i)
+            // }
+
+        const name = document.querySelector(".title")
+        console.log("Titulo", name.innerHTML)
+        name.innerHTML = "Saw Theme"
+        name.style.color = "red"
+
+        const texto = document.querySelector(".Prog")
+        texto.innerHTML = "Vendedor de Programa"
+        texto.style.color = "blue"
+
+        const parag = document.querySelector(".text")
+        parag.innerHTML = "Faço programa e vendo programa! Compre meus programa :D"
+        parag.style.color = "green"
+
     </script>
     
 
