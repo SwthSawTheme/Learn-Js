@@ -15,23 +15,34 @@
      Acesse meu <a href="https://github.com/SwthSawTheme"> Github</a>
     </p>
     <script>
-        // console.log(document)
-        // document.getElementById()
-        // const titleEL = document.getElementById("person-name")
-        // console.log("Titulo",titleEL)
+        // forma antiga    
+            // console.log(document)
+            // document.getElementById()
+            // const titleEL = document.getElementById("person-name")
+            // console.log("Titulo",titleEL)
 
-        // document.getElementsByTagName()
-        // const titleEl = document.getElementsByTagName("h1")
-        // console.log("titulo",titleEl)
+            // document.getElementsByTagName()
+            // const titleEl = document.getElementsByTagName("h1")
+            // console.log("titulo",titleEl)
 
-        // document.getElementsByTagName()
-        const test = document.getElementsByClassName("title")
-        console.log("title", test)
+            // document.getElementsByTagName()
+            // const test = document.getElementsByClassName("title")
+            // console.log("title", test)
 
-        for (const i of test){
-            console.log("El",i)
-        }
-
+            // for (const i of test){
+            //     console.log("El",i)
+            // }
+            
+        // Forma moderna
+            // document.querySelectiorAll("*")
+            // console.log("*",document.querySelectorAll("*"))
+            // console.log("tag", document.querySelector("#person-name"))
+            // console.log("tag",document.querySelectorAll("p"))
+            // console.log("class",document.querySelector(".text"))
+            // console.log("attr", document.querySelector("a[href]"))
+            for (const i of document.querySelectorAll("*")){
+                console.log("EL", i)
+            }
     </script>
     
 
