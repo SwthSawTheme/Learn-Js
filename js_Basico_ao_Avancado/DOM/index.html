@@ -8,21 +8,32 @@
 </head>
 <body>
     <img src="user.png" width="100">
-    <h1 id="person-name" class="title">John Paravick</h1>
+    <h1 id="person-name" class="title">John Pavarick</h1>
     <h2>Programador Javascript</h2>
     <p> Sou programador porcascript, na qual o mercado encontra-se saturado
-    <br>estou querendo me destacar sem nenhuma diferencial! <br>
+    <br>estou querendo me destacar sem nenhum diferencial! <br>
      Acesse meu <a href="https://github.com/SwthSawTheme"> Github</a>
     </p>
-
     <script>
-        const name = document.getElementsByClassName("title")
+        // console.log(document)
+        // document.getElementById()
+        // const titleEL = document.getElementById("person-name")
+        // console.log("Titulo",titleEL)
 
-        for (const a of name) {
-            console.log(a)
+        // document.getElementsByTagName()
+        // const titleEl = document.getElementsByTagName("h1")
+        // console.log("titulo",titleEl)
+
+        // document.getElementsByTagName()
+        const test = document.getElementsByClassName("title")
+        console.log("title", test)
+
+        for (const i of test){
+            console.log("El",i)
         }
 
-
     </script>
+    
+
 </body>
 </html>
